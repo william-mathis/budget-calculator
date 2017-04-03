@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- first step to a responsive site -->
-        <title>HTML Skeleton</title>
+        <title>Budget Calculator</title>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -22,17 +22,34 @@
     </head>
 
     <body>
-        <div class="big-number"><span class="defense"></span></div>
         <!-- YOUR CONTENT GOES HERE -->
+        <div id="big-number">
+            <p>$<span class="defense"></span></p>
+            <p>President Trump wants to increase the budget for the Department of Defense by $54 billion. But to do that without raising the deficit or cutting entitlements, he needs to cut a lot of other programs. Help Trump make the necessary cuts by clicking
+                the boxes next to programs below. Once you choose all the programs you want to cut, press the calculate button.
+            </p>
+            <input type="button" value="Calculate" id="calculate-button" />
+        </div>
+
         <div class="heading" id="departments">
             <div id="departments-list">
-                <input type="radio">Department of Agriculture</input>
+                <ul class="department">Department of Agriculture</ul>
                 <div class="agriculture">
-                    <input type="radio" class="subset">Water and Wastewater loan and grant program,<input>
-                    <input type="radio" class="subset"><input>
-                    <input type="radio" class="subset"><input>
-                    <input type="radio">Other<input></div>
+                    <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="waste-water-loan" data-cut="498000000"> Water and Wastewater loan and grant program</input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="rural-business-cooperative" data-cut="95000000">Rural Business and Cooperative Service discretionary activities</input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="mcgovern-dole" data-cut="195000000">McGovern-Dole International Food for Education program</input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="agriculture" class="subset" data-cut="3912000000">Other</input>
+                    </ul>
+                </div>
+                <!--closes agriculture-->
+                <div class="">
+                </div>
+
             </div>
+            <!--closes div department lists-->
         </div>
 
         <!--closes div deaprtments heading-->
@@ -40,7 +57,9 @@
             <div id="boxes"></div>
         </div>
         <!--closes div cuts heading-->
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="main.js" type="text/javascript"></script>
 
         <!-- Your javascript should be called here -->
     </body>
