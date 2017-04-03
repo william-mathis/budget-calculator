@@ -14,7 +14,7 @@ $(document).ready(function () {
 });
 
 function myFunction() {
-	var x = document.getElementById("myRadio");
+	var x = document.getElementById("myCheckbox");
 	x.checked = true;
 }
 
@@ -29,4 +29,4 @@ function agriculture(a, b, c, d) {
 }
 
 
-//When you click a radio you need it to find that amount and then subtract it from the total. //
+//When you click a checkbox you need it to find that amount and then subtract it from the total. //

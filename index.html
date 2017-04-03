@@ -23,36 +23,52 @@
 
     <body>
         <!-- YOUR CONTENT GOES HERE -->
-        <div id="big-number">
-            <p>$<span class="defense"></span></p>
-            <p>President Trump wants to increase the budget for the Department of Defense by $54 billion. But to do that without raising the deficit or cutting entitlements, he needs to cut a lot of other programs. Help Trump make the necessary cuts by clicking
-                the boxes next to programs below. Once you choose all the programs you want to cut, press the calculate button.
-            </p>
-            <input type="button" value="Calculate" id="calculate-button" />
-        </div>
+        <div class="hold-text">
+            <div id="big-number">
 
-        <div class="heading" id="departments">
-            <div id="departments-list">
-                <ul class="department">Department of Agriculture</ul>
-                <div class="agriculture">
-                    <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="waste-water-loan" data-cut="498000000"> Water and Wastewater loan and grant program</input>
-                    </ul>
-                    <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="rural-business-cooperative" data-cut="95000000">Rural Business and Cooperative Service discretionary activities</input>
-                    </ul>
-                    <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="mcgovern-dole" data-cut="195000000">McGovern-Dole International Food for Education program</input>
-                    </ul>
-                    <ul class="list"><input type="checkbox" name="agriculture" class="subset" data-cut="3912000000">Other</input>
-                    </ul>
-                </div>
-                <!--closes agriculture-->
-                <div class="">
-                </div>
-
+                <p>$<span class="defense"></span></p>
             </div>
-            <!--closes div department lists-->
-        </div>
+            <div id="top-text">
+                <p>President Trump wants to increase the budget for the Department of Defense by $54 billion. But to do that without raising the deficit or cutting entitlements, he needs to cut a lot of other programs. Help Trump make the necessary cuts
+                    by clicking the boxes next to programs below. Once you choose all the programs you want to cut, press the calculate button.
+                </p>
+            </div>
+            <input type="button" value="Calculate" id="calculate-button" />
 
-        <!--closes div deaprtments heading-->
+            <div class="heading" id="departments">
+                <div id="departments-list">
+                    <ul class="department">Department of Agriculture</ul>
+                    <div class="agriculture">
+                        <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="waste-water-loan" data-cut="498000000"> Water and Wastewater loan and grant program</input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="rural-business-cooperative" data-cut="95000000">Rural Business and Cooperative Service discretionary activities</input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="mcgovern-dole" data-cut="195000000">McGovern-Dole International Food for Education program</input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="agriculture" class="subset" data-cut="3912000000">Other</input>
+                        </ul>
+                    </div>
+                    <!-- close agriculture -->
+                    <ul class="department">Department of Commerce</ul>
+                    <div class="commerce">
+                        <ul class="list"><input type="checkbox" name="commerce" class="subset" id="economic-development-administration" data-cut="221000000"> Economic Development Administration</input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="commerce" class="subset" id="minority-business" data-cut="35600000">Minority Business Development Agency</input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="commerce" class="subset" id="manufacturing-extension" data-cut="124000000">Manufacturing Extension Partnership Program</input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="commerce" class="subset" id="noaa" data-cut="250000000">National Oceanic and Atmospheric Administration programs and grants that support coastal and marine management, research and education</input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="commerce" class="subset" data-cut="869400000">Other</input>
+                        </ul>
+                    </div>
+                    <!--closes commerce-->
+                </div>
+                <!--closes div department lists-->
+            </div>
+            <!--closes div deaprtments heading-->
+        </div>
+        <!-- closes the hold-text div -->
         <div class="heading" id="cuts">
             <div id="boxes"></div>
         </div>

@@ -64,9 +64,14 @@ html, body {
     font-size: 16px;
 }
 
-.big-number {
+#big-number {
     margin: 0 auto;
     margin-top: 0;
+    font-size: 3em;
+}
+
+#top-text {
+    font-size: 1.5em;
 }
 
 .defense {
@@ -83,9 +88,13 @@ html, body {
     margin-left: 10px;
 }
 
+.hold-text {
+    margin: 10px;
+}
+
 #departments {
     float: left;
-    max-width: 270px;
+    /*max-width: 270px;*/
     position: relative;
 }
 
@@ -103,6 +112,10 @@ html, body {
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
+    .hold-text {
+        max-width: 640px;
+        margin: 0 auto;
+    }
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
 }
 
