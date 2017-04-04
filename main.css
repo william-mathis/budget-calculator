@@ -91,6 +91,11 @@ html, body {
     text-decoration: underline;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
 .byline {
     position: absolute;
     color: white;
@@ -106,6 +111,12 @@ html, body {
     margin: 0 auto;
     margin-top: 0;
     font-size: 3em;
+    /*position: fixed;*/
+    width: 100%;
+    left: 0;
+    background-color: lightgrey;
+    display: block;
+    z-index: 4;
 }
 
 #top-text {
