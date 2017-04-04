@@ -64,6 +64,44 @@ html, body {
     font-size: 16px;
 }
 
+#title {
+    background-image: url(https://media.giphy.com/media/ADgfsbHcS62Jy/giphy.gif);
+    max-width: 100%;
+    position: relative;
+    height: 30vh;
+    overflow: hidden;
+}
+
+
+/*.giphy-embed {
+    max-width: 100%;
+    position: relative;
+}*/
+
+.big-text {
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 25%;
+    text-shadow: 5px 5px black;
+    margin-left: 12%;
+    /*margin: 0 auto;*/
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+
+.byline {
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.3em;
+    text-shadow: 3px 3px black;
+    margin-top: 47%;
+}
+
 #big-number {
     margin: 0 auto;
     margin-top: 0;
