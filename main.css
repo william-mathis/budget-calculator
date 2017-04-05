@@ -187,8 +187,9 @@ ul {
     margin-top: 10px;
 }
 
-.checked {
+.subset:checked+.list {
     text-decoration: line-through;
+    color: gray;
 }
 
 .list {
