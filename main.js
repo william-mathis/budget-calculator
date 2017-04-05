@@ -52,7 +52,10 @@ $(document).ready(function () {
 			var checkbox = $(this);
 			var value = parseInt(checkbox.data("cut"));
 			total = total + value;
+
+			// $("input[type='checkbox']:checked").addClass("checked");
 		});
+
 
 		newBudget = newBudget - total;
 		$(".defense").text(newBudget);
