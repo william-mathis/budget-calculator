@@ -33,322 +33,329 @@
         <!--closes title-->
         <div class="hold-text">
 
-            <div id="top-text">
+            <div class="top-text">
                 <p>President Trump wants to increase the budget for the Department of Defense by:</p>
-                <span class="billion">$54 billion</span>
-                <p>But to do that without raising the deficit or cutting entitlements, he needs to cut a lot of other programs.</p>
-                <p>Help Trump make the necessary cuts, by clicking the boxes next to programs below. Once you choose all the programs you want to cut, press the calculate button.
-                </p>
             </div>
+            <!-- <span class="billion">$54 billion</span> -->
             <div id="big-number">
 
-                <p>$<span class="defense">54000000000</span></p>
+                <p class="dollar-sign">$<span class="defense">54000000000</span></p>
                 <!-- <input type="button" value="Calculate" id="calculate-button" /> -->
             </div>
-
-
-            <div class="heading" id="departments">
-                <div id="departments-list">
-                    <div class="independent-agency">
-                        <details>
-                            <summary>Independent Federal Agencies</summary>
-                            <ul class="list">The Trump administration's budget blueprint calls for eliminating 19 independent federal agencies. Check the ones you'd like to terminate.</ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="african-development" data-cut="28200000">The African Development Foundation works with people in Africa to secure economic development and growth in the continent's
-                                most vulnerable communities.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="appalachian-regional" data-cut="120000000">The Appalachian Regional Commission invests in economic opportunities, infrastructure and education in communities
-                                with the greatest need in Alabama, Georgia, Kentucky, Maryland, Mississippi, New York, North Carolina, Ohio, Pennsylvania, South Carolina, Tennessee, West Virginia, and Virginia, with the aim of achieving parity with the
-                                rest of the country.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="chemical-safety" data-cut="12436000">The Chemical Safety and Hazard Investigation Board investigates chemical accidents and makes recommendations for accident
-                                prevention.
-                                </input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="national-and-community-service" data-cut="794608000">The Corporation for National and Community Service is the nation's largest grant provider for community
-                                service and volunteer programs at local nonprofits, schools, community organizations, and governments</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="public-broadcasting" data-cut="445000000">The Corporation for Public Broadcasting provide grants to public television and radio stations to support local programs
-                                and national distribution of shows like Frontline, Antiques Roadshow, and PBS Kids.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="delta-regional-authority" data-cut="15936000">The Delta Regional Authority supports disaster response, economic development investments, and healthcare access
-                                in the Mississippi Delta region.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="denali" data-cut="11000000">The Denali Commission funds programs that promote health, safety and economic self-sufficiency within rural communities in Alaska.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="museum-and-library-services" data-cut="230000000">The Institute of Museum and Library Services is the primary source of Federal support for the country's 123,000
-                                libraries and 35,000 museums.
-                                </input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="inter-american" data-cut="22200000"> The Inter-American Foundation invests in poor communities in Latin America and the Caribbean.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="trade-and-development" data-cut="80700000">The U.S. Trade and Development Agency helps companies create U.S. jobs by exporting U.S. goods and services to emerging
-                                economies
-                                </input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="legal-services" data-cut="475000000">The Legal Services Corporation distributes funds to local organizations that provide free civil legal assistance to people
-                                living in poverty.
-                                </input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="nea" data-cut="149849000">The National Endowment for the Arts is the independent federal agency that supports and funds the arts in America.
-                                </input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="neh" data-cut="149848000">The National Endowment for the Humanities supports education, scholarship, and research and development in the humanities and preserves
-                                America's cultural and intellectual resources.
-                                </input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="neighborhood-reinvestment" data-cut="140000000">The Neighborhood Reinvestment Corporation provides financial support, technical assistance, and training for
-                                affordable housing.
-                                </input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="northern-border" data-cut="5000000">The Northern Border Regional Commission addresses persistent economic distress in portions of Maine, New Hampshire, New
-                                York, and Vermont by developing transportation, basic public infrastructure, and job skills training.
-                                </input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="overseas-private-investment" data-cut="88000000">The Overseas Private Investment Corporation encourages American companies to invest in developing countries.
-                                </input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="institute-of-peace" data-cut="37884000">The United States Institute of Peace is an independent, nonpartisan institution that works to prevent and resolve international
-                                conflict without violence.
-                                </input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="council-on-homelessness" data-cut="3600000">United States Interagency Council on Homelessness creates partnerships at every level of government and with the
-                                private sector to prevent and end homelessness.
-                                </input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="woodrow-wilson-center" data-cut="10400000">The Woodrow Wilson International Center for Scholars shares research in the social sciences and humanities through
-                                conferences, publications and research grants.
-                                </input>
-                            </ul>
-                        </details>
-                    </div>
-
-                    <div class="agriculture">
-                        <details>
-                            <summary>Department of Agriculture</summary>
-                            <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="waste-water-loan" data-cut="498000000">Eliminate the Water and Wastewater loan and grant program.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="rural-business-cooperative" data-cut="95000000">Eliminate Rural Business and Cooperative Service discretionary activities.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="mcgovern-dole" data-cut="195000000">Eliminate the McGovern-Dole International Food for Education program.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="other_agriculture" data-cut="3912000000">Other</input>
-                            </ul>
-                        </details>
-                    </div>
-
-                    <!-- close agriculture -->
-                    <!-- <ul class="department"> -->
-                    <details>
-                        <summary>Department of Commerce</summary>
-                        <!-- </ul> -->
-                        <div class="commerce">
-                            <ul class="list"><input type="checkbox" name="commerce" class="subset" id="economic-development-administration" data-cut="221000000"> Economic Development Administration</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="commerce" class="subset" id="minority-business" data-cut="35600000">Minority Business Development Agency</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="commerce" class="subset" id="manufacturing-extension" data-cut="124000000">Manufacturing Extension Partnership Program</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="commerce" class="subset" id="noaa" data-cut="250000000">National Oceanic and Atmospheric Administration programs and grants that support coastal and marine management, research and education</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="commerce" class="subset" id="other_commerce" data-cut="869400000">Other</input>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <!--closes commerce-->
-                    <!-- <ul class="department"> -->
-                    <details>
-                        <summary>Department of Education</summary>
-                        <!-- </ul> -->
-                        <div class="education">
-                            <ul class="list"><input type="checkbox" name="education" class="subset" id="impact-aid-support" data-cut="66813">Impact Aid Support Payments for Federal Property, which help schools that have lost a portion of their tax base because the federal
-                                government bought at least 10 percent of land in their district.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="education" class="subset" id="teacher-quality-partnership" data-cut="42500000">Teacher Quality Partnership, which provides training for new teachers.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="education" class="subset" id="striving-readers" data-cut="190000000">Striving Readers grants, which promote literacy skills for kids until 12th grade.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="education" class="subset" id="supporting-effective-instruction" data-cut="2400000000">Supporting Effective Instruction state grants to support professional development for teachers and principals
-                                and to reduce class size.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="education" class="subset" id="twenty-first-century" data-cut="1200000000">21st Century Community Learning Centers, which funds a wide variety of before and after-school programs.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="education" class="subset" id="supplemental-educational" data-cut="732000000">Supplemental Education Opportunity Grants, which supply need-based grants of $100 to $400 per student</input>
-                            </ul>
-                        </div>
-                        <!--closes education-->
-                    </details>
-
-                    <details>
-                        <summary>Department of Energy</summary>
-                        <div class="energy">
-                            <ul class="list"><input type="checkbox" name="energy" class="subset" id="office-of-science" data-cut="900000000">Office of Science</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="energy" class="subset" id="technology-manufacturing" data-cut="5000000">Advanced Technology Manufacturing Program, which provides loans to auto manufacturers or manufacturers of their components
-                                to develop advanced technologies.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="energy" class="subset" id="title-17" data-cut="37000000">Title 17 Innovative Technology Loan Guarantee Program, which provides loan guarantees for innovative energy projects.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="energy" class="subset" id="advanced-research-projects-agency" data-cut="350000000">The Advanced Research Projects Agency, which "funds high-potential, high-impact energy projects that are too early
-                                for private sector investment but could significantly advance the ways we generate, store, distribute and use energy".</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="energy" class="subset" id="other_energy" data-cut="732000000">Other</input>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Department of Health and Human Services</summary>
-                        <div class="hhs">
-                            <ul class="list"><input type="checkbox" name="hhs" class="subset" id="nih" data-cut="5800000000">National Institutes of Health bought at least 10 percent of land in their district.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="hhs" class="subset" id="health-nursing-training" data-cut="403000000">Health professional and nursing training programs</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="hhs" class="subset" id="community-service" data-cut="4200000000">Eliminate Office of Community Services programs like the Low Income Home Energy Assistance Program.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="hhs" class="subset" id="other_health" data-cut="4030000000">Other</input>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <div class="fema">
-                        <details>
-                            <summary>Federal Emergency Management Agency</summary>
-                            <ul class="list"><input type="checkbox" name="fema" class="subset" id="fema" data-cut="667000000">Eliminate or reduce grants for programs like the pre-disaster mitigation and Homeland Security and set up federal-local cost-sharing for other
-                                grants.
-                                </input>
-                        </details>
-                    </div>
-
-                    <div class="hud">
-                        <details>
-                            <summary>Department of Housing and Urban Development</summary>
-                            <ul class="list"><input type="checkbox" name="hud" class="subset" id="community-development" data-cut="3000000000">Community Development block grant program</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="hud" class="subset" id="section-4" data-cut="35000000">Section 4 capacity-building for community development and affordable housing</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="hud" class="subset" id="other_housing-urban-development" data-cut="3165000000">Other</input>
-                            </ul>
-                        </details>
-                    </div>
-
-                    <div class="interior">
-                        <details>
-                            <summary>Department of the Interior</summary>
-                            <ul class="list"><input type="checkbox" name="interior" class="subset" id="new-federal-land" data-cut="120000000">Acquiring new federal land</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="interior" class="subset" id="abandoned-mine" data-cut="181000000">Abandoned mine land grants, which in FY 2017, helped fund projects in 25 states and three tribal areas eliminate dangerous conditions
-                                and pollution caused by abandoned coal mines.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="interior" class="subset" id="title-17" data-cut="37000000">Title 17 Innovative Technology Loan Guarantee Program, which provides loan guarantees for innovative energy projects.</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="interior" class="subset" id="other_interior" data-cut="1199000000">Other</input>
-                            </ul>
-                        </details>
-                    </div>
-
-                    <div class="justice">
-                        <details>
-                            <summary><input type="checkbox" name="justice" class="subset" id="other_justice" data-cut="1100000000">Department of Justice</input>
-                            </summary>
-                            Eliminate programs like the State Criminal Alien Assistance Program and reduce spending on federal prison construction.
-                        </details>
-                    </div>
-
-                    <div class="labor">
-                        <details>
-                            <summary>Department of Labor</summary>
-                            <ul class="list"><input type="checkbox" name="labor" class="subset" id="senior-community" data-cut="434000000">Senior Community Service Employment Program, which provides training for low-income and unmployed seniors</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="labor" class="subset" id="osha-grant" data-cut="11000000">Occupational Safety and Health Administration's training grants</input>
-                            </ul>
-                            <ul class="list"><input type="checkbox" name="labor" class="subset" id="other_labor" data-cut="2055000000">Other</input>
-                            </ul>
-                        </details>
-                    </div>
-
-                    <div class="state">
-                        <details>
-                            <summary><input type="checkbox" name="state" class="subset" id="other_state" data-cut="10100000000">Department of State and USAID</input>
-                            </summary>
-                            <ul>
-                                <li>Eliminate the Global Climate Change Initiative and cease payments to United Nations climate change programs.</li>
-                                <li>Reduce funding to the UN and affiliated agencies, including UN peacekeeping and other international organizations.</li>
-                                <li>Reduce funding for the Department of State’s Educational and Cultural Exchange (ECE) Programs.</li>
-                                <li>Eliminate some peacekeeping and security efforts such as the Complex Crises Fund.</li>
-                                <li>Eliminate direct appropriations to small organizations that receive funding from other sources.</li>
-                            </ul>
-                        </details>
-                    </div>
-
-                    <details>
-                        <summary>Treasury International Programs</summary>
-                        <ul class="list"><input type="checkbox" name="treasury-international" class="subset" id="development-banks" data-cut="650000000">Funding for multinational development banks, including the World Bank</input>
-                        </ul>
-                        <ul class="list"><input type="checkbox" name="treasury-international" class="subset" id="other_treasury-international" data-cut="153000000">Other</input>
-                        </ul>
-                    </details>
-
-                    <details>
-                        <summary>Department of Transportation</summary>
-                        <ul class="list"><input type="checkbox" name="transport" class="subset" id="essential-air-services" data-cut="175000000">Eliminate Essential Air Services, which subsidizes commercial flights to rural airports.</input>
-                        </ul>
-                        <ul class="list"><input type="checkbox" name="transport" class="subset" id="tiger" data-cut="11000000">Eliminate the TIGER grant program, which funds transportation projects.</input>
-                        </ul>
-                        <ul class="list"><input type="checkbox" name="transport" class="subset" id="other_transport" data-cut="1726000000">Reduce federal subsidies to Amtrak, terminate federal support for Amtrak's long distance train services and limit funding for the
-                            Federal Transit Administration's capital investments.</input>
-                        </ul>
-                    </details>
-
-                    <details>
-                        <summary>Department of the Treasury</summary>
-                        <ul class="list"><input type="checkbox" name="treasury" class="subset" id="financial-institutions" data-cut="175000000">Eliminate Community Development Financial Institutions Fund grants, which fund projects in economically distressed parts of
-                            the country in partnership with private organizations.</input>
-                        </ul>
-                        <ul class="list"><input type="checkbox" name="treasury" class="subset" id="other_treasury" data-cut="309000000">Shrink the Federal workforce and direct resources away from policy offices.</input>
-                        </ul>
-                    </details>
-
-                    <details>
-                        <summary>Environmental Protection Agency</summary>
-                        <ul class="list"><input type="checkbox" name="epa" class="subset" id="clean-power" data-cut="100000000">Eliminate funding for the Clean Power Plan, international climate change programs and climate change research and partnership programs.</input>
-                        </ul>
-                        <ul class="list"><input type="checkbox" name="epa" class="subset" id="superfund" data-cut="330000000">Cut the Hazardous Substance Superfund Account by 30%. The accout provides funds to clean up the most contaminated environments in the country
-                            and respond to natural disasters, oil spills and environmental emergencies.</input>
-                        </ul>
-                        <ul class="list"><input type="checkbox" name="epa" class="subset" id="enforcement" data-cut="129000000">Reduce funding for enforcement of environmental violations by 35%.</input>
-                        </ul>
-                        <ul class="list"><input type="checkbox" name="epa" class="subset" id="office-of-research" data-cut="233000000">Cut funding for the Office of Research and Development.</input>
-                        </ul>
-                        <ul class="list"><input type="checkbox" name="epa" class="subset" id="categorical-grants" data-cut="482000000">Reduce categorical grants, which states use to implement various environmental programs.</input>
-                        </ul>
-                        <ul class="list"><input type="checkbox" name="epa" class="subset" id="regional-programs" data-cut="427000000">Eliminate funding for specific regional efforts such as the Great Lakes Restoration Initiative, the Chesapeake Bay, and other geographic
-                            programs.
-                        </ul>
-                        <ul class="list"><input type="checkbox" name="epa" class="subset" id="other_epa" data-cut="899000000">Eliminate more than 50 EPA programs including Energy Star, Targeted Airshed grants, the Endocrine Disruptor Screening Program and infrastructure
-                            assistance to Alaska Native Villages and the Mexico Border.</input>
-                        </ul>
-                    </details>
-
-                    <details>
-                        <summary><input type="checkbox" name="nasa" class="subset" id="other_nasa" data-cut="15402240">NASA</input>
-                        </summary>
-                        Eliminate the Office of Education and restructure a satellite refueling mission.
-                    </details>
-
-                    <details>
-                        <summary>Small Business Administration</summary>
-                        <ul class="list"><input type="checkbox" name="small-business-admin" class="subset" id="financial-institutions" data-cut="175000000">Eliminate Community Development Financial Institutions Fund grants, which fund projects in economically distressed
-                            parts of the country in partnership with private organizations.</input>
-                        </ul>
-                        <ul class="list"><input type="checkbox" name="small-business-admin" class="subset" id="other_small-business-admin" data-cut="31200000">Other</input>
-                        </ul>
-                    </details>
-
-                </div>
-                <!--closes div department lists-->
+            <div class="top-text">
+                <p>But to do that without raising the deficit or cutting entitlements, he needs to cut a lot of other programs.</p>
+                <p>Help Trump make the necessary cuts, by clicking the boxes next to programs below.
+                </p>
             </div>
-            <!--closes div deaprtments heading-->
+        </div>
+
+
+
+        <div class="heading" id="departments">
+
+            <div id="departments-list">
+                <div class="independent-agency">
+                    <details>
+                        <summary>Independent Federal Agencies</summary>
+                        <ul class="list">The Trump administration's budget blueprint calls for eliminating 19 independent federal agencies. Check the ones you'd like to terminate.</ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="african-development" data-cut="28200000"><label class="list">The African Development Foundation works with people in Africa to secure economic development and growth in the continent's
+                            most vulnerable communities.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="appalachian-regional" data-cut="120000000"><label class="list">The Appalachian Regional Commission invests in economic opportunities, infrastructure and education in communities with
+                            the greatest need in Alabama, Georgia, Kentucky, Maryland, Mississippi, New York, North Carolina, Ohio, Pennsylvania, South Carolina, Tennessee, West Virginia, and Virginia, with the aim of achieving parity with the rest of
+                            the country.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="chemical-safety" data-cut="12436000"><label class="list">The Chemical Safety and Hazard Investigation Board investigates chemical accidents and makes recommendations for accident
+                            prevention.</label>
+                            </input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="national-and-community-service" data-cut="794608000"><label class="list">The Corporation for National and Community Service is the nation's largest grant provider for community service
+                            and volunteer programs at local nonprofits, schools, community organizations, and governments</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="public-broadcasting" data-cut="445000000"><label class="list">The Corporation for Public Broadcasting provide grants to public television and radio stations to support local programs
+                            and national distribution of shows like Frontline, Antiques Roadshow, and PBS Kids.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="delta-regional-authority" data-cut="15936000"><label class="list">The Delta Regional Authority supports disaster response, economic development investments, and healthcare access
+                            in the Mississippi Delta region.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="denali" data-cut="11000000"><label class="list">The Denali Commission funds programs that promote health, safety and economic self-sufficiency within rural communities in Alaska.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="museum-and-library-services" data-cut="230000000"><label class="list">The Institute of Museum and Library Services is the primary source of Federal support for the country's 123,000
+                            libraries and 35,000 museums.
+                            </label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="inter-american" data-cut="22200000"><label class="list"> The Inter-American Foundation invests in poor communities in Latin America and the Caribbean.</input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="trade-and-development" data-cut="80700000"><label class="list">The U.S. Trade and Development Agency helps companies create U.S. jobs by exporting U.S. goods and services to emerging
+                            economies
+                            </label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="legal-services" data-cut="475000000"><label class="list">The Legal Services Corporation distributes funds to local organizations that provide free civil legal assistance to people
+                            living in poverty.
+                            </label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="nea" data-cut="149849000"><label class="list">The National Endowment for the Arts is the independent federal agency that supports and funds the arts in America.
+                            </label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="neh" data-cut="149848000"><label class="list">The National Endowment for the Humanities supports education, scholarship, and research and development in the humanities and preserves
+                            America's cultural and intellectual resources.
+                            </label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="neighborhood-reinvestment" data-cut="140000000"><label class="list">The Neighborhood Reinvestment Corporation provides financial support, technical assistance, and training for affordable
+                            housing.
+                            </label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="northern-border" data-cut="5000000"><label class="list">The Northern Border Regional Commission addresses persistent economic distress in portions of Maine, New Hampshire, New York,
+                            and Vermont by developing transportation, basic public infrastructure, and job skills training.
+                            </label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="overseas-private-investment" data-cut="88000000"><label class="list">The Overseas Private Investment Corporation encourages American companies to invest in developing countries.
+                            </label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="institute-of-peace" data-cut="37884000"><label class="list">The United States Institute of Peace is an independent, nonpartisan institution that works to prevent and resolve international
+                            conflict without violence.
+                            </label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="council-on-homelessness" data-cut="3600000"><label class="list">United States Interagency Council on Homelessness creates partnerships at every level of government and with the private
+                            sector to prevent and end homelessness.
+                            </label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="independent-agency" class="subset" id="woodrow-wilson-center" data-cut="10400000"><label class="list">The Woodrow Wilson International Center for Scholars shares research in the social sciences and humanities through conferences,
+                            publications and research grants.
+                          </label></input>
+                        </ul>
+                    </details>
+                </div>
+                <details>
+                    <summary>
+                        <!-- <ul class="department"> -->
+
+                        Department of Agriculture
+                    </summary>
+                    <div class="agriculture">
+                        <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="waste-water-loan" data-cut="498000000"><label class="list">Water and Wastewater loan and grant program
+                        </label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="rural-business-cooperative" data-cut="95000000"><label class="list">Rural Business and Cooperative Service discretionary activities</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="agriculture" class="subset" id="mcgovern-dole" data-cut="195000000"><label class="list">McGovern-Dole International Food for Education program</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="agriculture" class="subset" data-cut="3912000000"><label class="list">Other</label></input>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- close agriculture -->
+                <!-- <ul class="department"> -->
+                <details>
+                    <summary>Department of Commerce</summary>
+                    <!-- </ul> -->
+                    <div class="commerce">
+                        <ul class="list"><input type="checkbox" name="commerce" class="subset" id="economic-development-administration" data-cut="221000000"><label class="list">Economic Development Administration</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="commerce" class="subset" id="minority-business" data-cut="35600000"><label class="list">Minority Business Development Agency</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="commerce" class="subset" id="manufacturing-extension" data-cut="124000000"><label class="list">Manufacturing Extension Partnership Program</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="commerce" class="subset" id="noaa" data-cut="250000000"><label class="list">National Oceanic and Atmospheric Administration programs and grants that support coastal and marine management, research and education</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="commerce" class="subset" id="other_commerce" data-cut="869400000"><label class="list">Other</label></input>
+                        </ul>
+                    </div>
+                </details>
+
+                <!--closes commerce-->
+                <!-- <ul class="department"> -->
+                <details>
+                    <summary>Department of Education</summary>
+                    <!-- </ul> -->
+                    <div class="education">
+                        <ul class="list"><input type="checkbox" name="education" class="subset" id="impact-aid-support" data-cut="66813"><label class="list">Impact Aid Support Payments for Federal Property, which help schools that have lost a portion of their tax base because the federal
+                            government bought at least 10 percent of land in their district.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="education" class="subset" id="teacher-quality-partnership" data-cut="42500000"><label class="list">Teacher Quality Partnership, which provides training for new teachers.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="education" class="subset" id="striving-readers" data-cut="190000000"><label class="list">Striving Readers grants, which promote literacy skills for kids until 12th grade.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="education" class="subset" id="supporting-effective-instruction" data-cut="2400000000"><label class="list">Supporting Effective Instruction state grants to support professional development for teachers and principals and
+                            to reduce class size.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="education" class="subset" id="twenty-first-century" data-cut="1200000000"><label class="list">21st Century Community Learning Centers, which funds a wide variety of before and after-school programs.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="education" class="subset" id="supplemental-educational" data-cut="732000000"><label class="list">Supplemental Education Opportunity Grants, which supply need-based grants of $100 to $400 per student</label></input>
+                        </ul>
+                    </div>
+                    <!--closes education-->
+                </details>
+
+                <details>
+                    <summary>Department of Energy</summary>
+                    <div class="energy">
+                        <ul class="list"><input type="checkbox" name="energy" class="subset" id="office-of-science" data-cut="900000000">Office of Science</label>
+                            </input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="energy" class="subset" id="technology-manufacturing" data-cut="5000000"><label class="list">Advanced Technology Manufacturing Program, which provides loans to auto manufacturers or manufacturers of their components to
+                            develop advanced technologies.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="energy" class="subset" id="title-17" data-cut="37000000"><label class="list">Title 17 Innovative Technology Loan Guarantee Program, which provides loan guarantees for innovative energy projects.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="energy" class="subset" id="advanced-research-projects-agency" data-cut="350000000"><label class="list">The Advanced Research Projects Agency, which "funds high-potential, high-impact energy projects that are too early
+                            for private sector investment but could significantly advance the ways we generate, store, distribute and use energy".</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="energy" class="subset" id="other_energy" data-cut="732000000"><label class="list">Other</label></input>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Department of Health and Human Services</summary>
+                    <div class="hhs">
+                        <ul class="list"><input type="checkbox" name="hhs" class="subset" id="nih" data-cut="5800000000"><label class="list">National Institutes of Health bought at least 10 percent of land in their district.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="hhs" class="subset" id="health-nursing-training" data-cut="403000000"><label class="list">Health professional and nursing training programs</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="hhs" class="subset" id="community-service" data-cut="4200000000"><label class="list">Eliminate Office of Community Services programs like the Low Income Home Energy Assistance Program.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="hhs" class="subset" id="other_health" data-cut="4030000000"><label class="list">Other</label></input>
+                        </ul>
+                    </div>
+                </details>
+
+                <div class="fema">
+                    <details>
+                        <summary>Federal Emergency Management Agency</summary>
+                        <ul class="list"><input type="checkbox" name="fema" class="subset" id="fema" data-cut="667000000"><label class="list">Eliminate or reduce grants for programs like the pre-disaster mitigation and Homeland Security and set up federal-local cost-sharing for other grants.
+                        </label></input>
+                    </details>
+                </div>
+
+                <div class="hud">
+                    <details>
+                        <summary>Department of Housing and Urban Development</summary>
+                        <ul class="list"><input type="checkbox" name="hud" class="subset" id="community-development" data-cut="3000000000"><label class="list">Community Development block grant program</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="hud" class="subset" id="section-4" data-cut="35000000"><label class="list">Section 4 capacity-building for community development and affordable housing</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="hud" class="subset" id="other_housing-urban-development" data-cut="3165000000"><label class="list">Other</label></input>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="interior">
+                    <details>
+                        <summary>Department of the Interior</summary>
+                        <ul class="list"><input type="checkbox" name="interior" class="subset" id="new-federal-land" data-cut="120000000"><label class="list">Acquiring new federal land</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="interior" class="subset" id="abandoned-mine" data-cut="181000000"><label class="list">Abandoned mine land grants, which in FY 2017, helped fund projects in 25 states and three tribal areas eliminate dangerous conditions
+                            and pollution caused by abandoned coal mines.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="interior" class="subset" id="title-17" data-cut="37000000"><label class="list">Title 17 Innovative Technology Loan Guarantee Program, which provides loan guarantees for innovative energy projects.</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="interior" class="subset" id="other_interior" data-cut="1199000000"><label class="list">Other</label></input>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="justice">
+                    <details>
+                        <summary><input type="checkbox" name="justice" class="subset" id="other_justice" data-cut="1100000000">Department of Justice</input>
+                        </summary>
+                        Eliminate programs like the State Criminal Alien Assistance Program and reduce spending on federal prison construction.
+                    </details>
+                </div>
+
+                <div class="labor">
+                    <details>
+                        <summary>Department of Labor</summary>
+                        <ul class="list"><input type="checkbox" name="labor" class="subset" id="senior-community" data-cut="434000000"><label class="list">Senior Community Service Employment Program, which provides training for low-income and unmployed seniors</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="labor" class="subset" id="osha-grant" data-cut="11000000"><label class="list">Occupational Safety and Health Administration's training grants</label></input>
+                        </ul>
+                        <ul class="list"><input type="checkbox" name="labor" class="subset" id="other_labor" data-cut="2055000000"><label class="list">Other</label></input>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="state">
+                    <details>
+                        <summary><input type="checkbox" name="state" class="subset" id="other_state" data-cut="10100000000">Department of State and USAID</input>
+                        </summary>
+                        <ul>
+                            <li>Eliminate the Global Climate Change Initiative and cease payments to United Nations climate change programs.</li>
+                            <li>Reduce funding to the UN and affiliated agencies, including UN peacekeeping and other international organizations.</li>
+                            <li>Reduce funding for the Department of State’s Educational and Cultural Exchange (ECE) Programs.</li>
+                            <li>Eliminate some peacekeeping and security efforts such as the Complex Crises Fund.</li>
+                            <li>Eliminate direct appropriations to small organizations that receive funding from other sources.</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <details>
+                    <summary>Treasury International Programs</summary>
+                    <ul class="list"><input type="checkbox" name="treasury-international" class="subset" id="development-banks" data-cut="650000000"><label class="list">Funding for multinational development banks, including the World Bank</label></input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="treasury-international" class="subset" id="other_treasury-international" data-cut="153000000"><label class="list">Other</label></input>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Department of Transportation</summary>
+                    <ul class="list"><input type="checkbox" name="transport" class="subset" id="essential-air-services" data-cut="175000000"><label class="list">Eliminate Essential Air Services, which subsidizes commercial flights to rural airports.</label></input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="transport" class="subset" id="tiger" data-cut="11000000"><label class="list">Eliminate the TIGER grant program, which funds transportation projects.</label></input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="transport" class="subset" id="other_transport" data-cut="1726000000"><label class="list">Reduce federal subsidies to Amtrak, terminate federal support for Amtrak's long distance train services and limit funding for the Federal
+                        Transit Administration's capital investments.</label></input>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Department of the Treasury</summary>
+                    <ul class="list"><input type="checkbox" name="treasury" class="subset" id="financial-institutions" data-cut="175000000"><label class="list">Eliminate Community Development Financial Institutions Fund grants, which fund projects in economically distressed parts of the
+                        country in partnership with private organizations.</label></input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="treasury" class="subset" id="other_treasury" data-cut="309000000"><label class="list">Shrink the Federal workforce and direct resources away from policy offices.</label></input>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Environmental Protection Agency</summary>
+                    <ul class="list"><input type="checkbox" name="epa" class="subset" id="clean-power" data-cut="100000000"><label class="list">Eliminate funding for the Clean Power Plan, international climate change programs and climate change research and partnership programs.</label></input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="epa" class="subset" id="superfund" data-cut="330000000"><label class="list">Cut the Hazardous Substance Superfund Account by 30%. The accout provides funds to clean up the most contaminated environments in the country and
+                        respond to natural disasters, oil spills and environmental emergencies.</label></input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="epa" class="subset" id="enforcement" data-cut="129000000"><label class="list">Reduce funding for enforcement of environmental violations by 35%.</label></input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="epa" class="subset" id="office-of-research" data-cut="233000000"><label class="list">Cut funding for the Office of Research and Development.</label></input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="epa" class="subset" id="categorical-grants" data-cut="482000000"><label class="list">Reduce categorical grants, which states use to implement various environmental programs.</label></input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="epa" class="subset" id="regional-programs" data-cut="427000000"><label class="list">Eliminate funding for specific regional efforts such as the Great Lakes Restoration Initiative, the Chesapeake Bay, and other geographic programs.</label></input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="epa" class="subset" id="other_epa" data-cut="899000000"><label class="list">Eliminate more than 50 EPA programs including Energy Star, Targeted Airshed grants, the Endocrine Disruptor Screening Program and infrastructure assistance
+                        to Alaska Native Villages and the Mexico Border.</label></input>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary><input type="checkbox" name="nasa" class="subset" id="other_nasa" data-cut="15402240">NASA</input>
+                    </summary>
+                    Eliminate the Office of Education and restructure a satellite refueling mission.
+                </details>
+
+                <details>
+                    <summary>Small Business Administration</summary>
+                    <ul class="list"><input type="checkbox" name="small-business-admin" class="subset" id="financial-institutions" data-cut="175000000"><label class="list">Eliminate Community Development Financial Institutions Fund grants, which fund projects in economically distressed parts
+                        of the country in partnership with private organizations.</label></input>
+                    </ul>
+                    <ul class="list"><input type="checkbox" name="small-business-admin" class="subset" id="other_small-business-admin" data-cut="31200000"><label class="list">Other</label></input>
+                    </ul>
+                </details>
+            </div>
+            <!--closes div department lists-->
+        </div>
+        <!--closes div deaprtments heading-->
         </div>
         <!-- closes the hold-text div -->
         <div class="heading" id="cuts">
@@ -361,16 +368,6 @@
 
         <!-- Your javascript should be called here -->
     </body>
-
-</html>
-</script>
-
-<!-- Your javascript should be called here -->
-</body>
-
-</html>
-
-</body>
 
 </html>
 </script>
