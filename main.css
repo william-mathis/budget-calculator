@@ -76,9 +76,10 @@ input {
     font-family: sans-serif;
 }
 
-summary {
+
+/*summary {
     font-family: sans-serif;
-}
+}*/
 
 ul {
     font-family: sans-serif;
@@ -198,6 +199,16 @@ padding-top: 8px;
     margin-top: 10px;
 }
 
+.select_all:checked {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+input[type=checkbox]:checked+.select_all {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
 .subset:checked+.list {
     text-decoration: line-through;
     color: #ccc;
@@ -208,6 +219,7 @@ summary {
     line-height: 1.2;
     margin-left: 1.6em;
     text-indent: -2.1em;
+    font-family: sans-serif;
 }
 
 .summary-detail {
