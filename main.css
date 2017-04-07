@@ -124,10 +124,11 @@ position: relative;
     text-decoration: underline;
 }
 
-.sticky {
+
+/*.sticky {
     position: fixed;
     top: 0;
-}
+}*/
 
 .byline {
     position: absolute;
@@ -202,10 +203,22 @@ padding-top: 8px;
     color: #ccc;
 }
 
+summary {
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin-left: 1.6em;
+    text-indent: -2.1em;
+}
+
+.summary-detail {
+    margin-left: 1.9em;
+    /*text-indent: -2em;*/
+}
+
 .list {
-    margin-left: .5em;
+    margin-left: .9em;
     /*padding-left: 0px;*/
-    text-indent: -2em;
+    text-indent: -2.3em;
 }
 
 li::first-line {
@@ -219,7 +232,7 @@ li::first-line {
 }
 
 .list-items {
-    padding-left: 3em;
+    padding-left: 3.1em;
 }
 
 .summary-details {
@@ -258,11 +271,6 @@ li::first-line {
     position: absolute;
     text-align: center;
     right: 0;
-}
-
-summary {
-    font-size: 1.2em;
-    line-height: 1.2;
 }
 
 
