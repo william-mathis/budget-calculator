@@ -303,6 +303,17 @@ input[type=checkbox]:checked+.select_all {
     z-index: 1020;
 }
 
+.back {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.second-top {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
 img.photo {
     margin-top: 0;
     font-size: 3em;
@@ -316,9 +327,37 @@ img.photo {
     padding-top: 5%;
 }
 
-.icon {
-    max-width: 25%;
+.second-text {
+    max-width: 100%;
+}
+
+img.icon {
+    max-width: 77%;
     margin: 0 auto;
+    display: block;
+}
+
+figcaption {
+    font-size: .8em;
+}
+
+
+/*
+img.mulvaney {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+}*/
+
+.big-text2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mulvaney {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
 }
 
 
