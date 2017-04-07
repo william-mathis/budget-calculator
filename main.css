@@ -294,6 +294,28 @@ input[type=checkbox]:checked+.select_all {
     right: 0;
 }
 
+#bottom {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: sticky;
+    background-color: #FFF;
+    z-index: 1020;
+}
+
+img.photo {
+    margin-top: 0;
+    font-size: 3em;
+    height: 10vh;
+    background-color: #000;
+    display: block;
+    z-index: 4;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    padding-top: 5%;
+}
+
 
 /* Tablet/Desktop overrides */
 
