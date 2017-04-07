@@ -316,6 +316,11 @@ img.photo {
     padding-top: 5%;
 }
 
+.icon {
+    max-width: 25%;
+    margin: 0 auto;
+}
+
 
 /* Tablet/Desktop overrides */
 
