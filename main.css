@@ -76,11 +76,6 @@ input {
     font-family: sans-serif;
 }
 
-
-/*summary {
-    font-family: sans-serif;
-}*/
-
 ul {
     font-family: sans-serif;
 }
@@ -217,20 +212,20 @@ input[type=checkbox]:checked+.select_all {
 summary {
     font-size: 1.2em;
     line-height: 1.2;
-    margin-left: 1.6em;
-    text-indent: -2.1em;
+    margin-left: 1.9em;
+    text-indent: -2.3em;
     font-family: sans-serif;
 }
 
 .summary-detail {
-    margin-left: 1.9em;
+    margin-left: 2.2em;
     /*text-indent: -2em;*/
 }
 
 .list {
     margin-left: .9em;
     /*padding-left: 0px;*/
-    text-indent: -2.3em;
+    text-indent: -2.35em;
 }
 
 li::first-line {
@@ -257,13 +252,6 @@ li::first-line {
     position: relative;
 }
 
-.progress {
-    width: 88%;
-    height: 25px;
-    background-color: #F5F5F5;
-    position: absolute
-}
-
 .progress_container {
     background-color: white;
     height: 25px;
@@ -277,8 +265,16 @@ li::first-line {
     transition: width .5s ease-in-out;
 }
 
+.progress {
+    width: 85%;
+    height: 25px;
+    background-color: #F5F5F5;
+    position: absolute
+}
+
 #reset {
     height: 25px;
+    width: 15%;
     float: right;
     position: absolute;
     text-align: center;
@@ -297,6 +293,14 @@ li::first-line {
         font-size: 7.5em;
     }
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+.progress {
+    width: 95%
+}
+
+#reset {
+    width: 7%
 }
 
 @media(min-width: 729px) {
