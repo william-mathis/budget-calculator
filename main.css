@@ -226,13 +226,16 @@ input[type=checkbox]:checked+.select_all {
     /*text-indent: -2em;*/
 }
 
-.list {
+
+/*.list {
     margin-left: .9em;
     /*padding-left: 0px;*/
-    text-indent: -2.35em;
-}
 
-li::first-line {
+
+/*text-indent: -2.35em;
+}*/
+
+*/ li::first-line {
     text-indent: 1.5em;
 }
 
@@ -243,7 +246,13 @@ li::first-line {
 }
 
 .list-items {
-    padding-left: 3.1em;
+    padding-left: 0em;
+    margin-left: 0em;
+    text-indent: 0em;
+    font-family: sans-serif;
+    display: inline-block;
+    /*max-width: 50%;*/
+    /*vertical-align: top;*/
 }
 
 .summary-details {
