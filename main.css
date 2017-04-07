@@ -297,14 +297,12 @@ li::first-line {
         font-size: 7.5em;
     }
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-}
-
-.progress {
-    width: 95%
-}
-
-#reset {
-    width: 7%
+    .progress {
+        width: 95%
+    }
+    #reset {
+        width: 7%
+    }
 }
 
 @media(min-width: 729px) {
