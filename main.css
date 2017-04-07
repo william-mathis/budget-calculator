@@ -247,7 +247,7 @@ input[type=checkbox]:checked+.select_all {
 
 .list-items {
     padding-left: 0em;
-    margin-left: 0em;
+    margin-left: 2.5em;
     text-indent: 0em;
     font-family: sans-serif;
     display: inline-block;
@@ -295,7 +295,7 @@ input[type=checkbox]:checked+.select_all {
 }
 
 #bottom {
-    width: 100%;
+    max-width: 100%;
     left: 0;
     bottom: 0;
     position: sticky;
