@@ -210,12 +210,15 @@ input[type=checkbox]:checked+.select_all {
     color: #ccc;
 }
 
-summary {
+.select_all {
     font-size: 1.2em;
     line-height: 1.2;
-    margin-left: 1.9em;
-    text-indent: -2.3em;
+    margin-left: 0em;
+    text-indent: 0em;
     font-family: sans-serif;
+    display: inline-block;
+    max-width: 65%;
+    vertical-align: top;
 }
 
 .summary-detail {
