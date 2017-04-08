@@ -32,7 +32,7 @@ var totalBudget;
 
 // $(document).ready(function () {
 // 	var $window = $(window),
-// 		$stickyEl = $('#big-number'),
+// 		$stickyEl = $('#results'),
 // 		elTop = $stickyEl.offset().top;
 //
 // 	$window.scroll(function () {
@@ -44,11 +44,11 @@ var totalBudget;
 $(document).ready(function () {
 	totalBudget = parseInt($(".defense").text());
 
-	$("input[type='checkbox']").on("click", function (e) {
+	$("input[type='checkbox']").on("change", function (e) {
 		var total = 0;
 		var newBudget = totalBudget;
 
-		$("input[type='checkbox']:checked").each(function () {
+		$("input[type='checkbox']:checked:not(.select_all)").each(function () {
 			var checkbox = $(this);
 			var value = parseInt(checkbox.data("cut"));
 			total = total + value;
@@ -56,13 +56,28 @@ $(document).ready(function () {
 			// $("input[type='checkbox']:checked").addClass("checked");
 		});
 
-		if (newBudget = < 0) {
-			$("#nextPage").addClass("stickyBottom");
-		}
-
+		var pct = (total / totalBudget) * 100;
 		newBudget = newBudget - total;
 		$(".defense").text(newBudget);
+		$(".bar").css({ width: pct + "%" });
 	});
+
+	$(".select_all").on("click", function (e) {
+		var checkbox = $(this);
+		var name = checkbox.attr("name");
+
+		if (checkbox.is(":checked")) {
+			$("input[name='" + name + "']").prop("checked", true);
+		} else {
+			$("input[name='" + name + "']").prop("checked", false);
+		}
+	});
+
+	$("#reset").on("click", function (e) {
+		e.preventDefault();
+
+		$("[type='checkbox']").prop("checked", false).trigger("change");
+	})
 });
 
 
