@@ -239,7 +239,10 @@ input[type=checkbox]:checked+.select_all {
 #departments {
     /*max-width: 270px;*/
     position: relative;
-    padding: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
 }
 
 .list-items {
@@ -333,6 +336,7 @@ blockquote footer cite {
 }
 
 #bottom {
+    text-align: right;
     width: 100%;
     left: 0;
     bottom: 0;
@@ -350,6 +354,7 @@ blockquote footer cite {
     position: sticky;
     top: 0;
     background-color: #fff;
+    margin-top: 1em;
 }
 
 img.photo {
@@ -362,7 +367,11 @@ img.photo {
     left: 0px;
     right: 0px;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 5px;
+}
+
+img {
+    padding: .5em;
 }
 
 .second-text {
@@ -375,10 +384,6 @@ img.icon {
     display: block;
 }
 
-figcaption {
-    font-size: .8em;
-}
-
 
 /*
 img.mulvaney {
@@ -389,7 +394,8 @@ img.mulvaney {
 
 .big-text2 {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 1em;
+    margin-bottom: .5em;
 }
 
 .mulvaney {
@@ -398,18 +404,28 @@ img.mulvaney {
     display: block;
 }
 
+figcaption {
+    color: #808080;
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+    font-size: .8em;
+}
+
 
 /* Tablet/Desktop overrides */
 
+
+/* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
 @media(min-width: 681px) {
-    .hold-text {
+    .hold-text, .second-text, .second-top {
         max-width: 640px;
         margin: 0 auto;
     }
     .big-text {
         font-size: 7.5em;
     }
-    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
     .progress {
         width: 95%
     }
@@ -440,5 +456,6 @@ img.mulvaney {
         position: relative;
         padding-right: 60px;
         padding-left: 1%;
+        padding-bottom: .5em;
     }
 }
