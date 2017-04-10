@@ -41,31 +41,36 @@ var totalBudget;
 // 	});
 // });
 
+// NUMBERS ARE INTEGERS.
 $(document).ready(function () {
 	totalBudget = parseInt($(".defense").text());
 
+	// GET READY FOR MATH. WE'RE USING CHECKBOXES, SO DON'T PREVENT DEFAULT.
 	$("input[type='checkbox']").on("change", function (e) {
 		var total = 0;
 		var newBudget = totalBudget;
 
+		// WHEN YOU CLICK A CHECKBOX THAT'S NOT OF THE CLASS select_all, PERFORM MATH.
 		$("input[type='checkbox']:checked:not(.select_all)").each(function () {
 			var checkbox = $(this);
 			var value = parseInt(checkbox.data("cut"));
 			total = total + value;
-
 			// $("input[type='checkbox']:checked").addClass("checked");
 		});
 
+		// FIGURE OUT THE AMOUNT YOU'VE CUT OUT OF 54BN, CONVERT IT TO A PERCENTAGE, AND APPLY IT TO THE WIDTH OF "BAR"
 		var pct = (total / totalBudget) * 100;
 		newBudget = newBudget - total;
 		$(".defense").text(newBudget);
 		$(".bar").css({ width: pct + "%" });
 	});
 
+	// ALLOW DEPARTMENT CHECKBOXES TO CHECK SUB-CHECKBOXES.
 	$(".select_all").on("click", function (e) {
 		var checkbox = $(this);
 		var name = checkbox.attr("name");
 
+		// ADD "CHECKED" TO THE INPUT NAME IN HTML IF THE BOX IS CHECKED. I THINK. I KIND OF FORGET WHY WE DID THIS.
 		if (checkbox.is(":checked")) {
 			$("input[name='" + name + "']").prop("checked", true);
 		} else {
@@ -73,6 +78,11 @@ $(document).ready(function () {
 		}
 	});
 
+	// CHECK THE DEPARTMENT BOX IF ALL ITS SUB-BOXES ARE CHECKED.
+
+	// UNCHECK THE DEPARTMENT BOX IF ONE OF ITS SUB-BOXES IS UNCHECKED.
+
+	// RESET BUTTON CHANGES ANY CHECKED BOX TO UNCHECKED.
 	$("#reset").on("click", function (e) {
 		e.preventDefault();
 
