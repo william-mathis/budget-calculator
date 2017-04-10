@@ -192,6 +192,12 @@ padding-top: 8px;
     margin-top: 10px;
 }
 
+
+/*input[type="checkbox"] {
+    width: 1.1em;
+    height: 1.1em;
+}*/
+
 .select_all:checked {
     text-decoration: line-through;
     color: #ccc;
@@ -207,19 +213,24 @@ input[type=checkbox]:checked+.select_all {
     color: #ccc;
 }
 
-.select_all {
+.select_all, .subset {
     font-size: 1.2em;
     line-height: 1.2;
     margin-left: 0em;
     text-indent: 0em;
     font-family: sans-serif;
     display: inline-block;
-    max-width: 65%;
+    max-width: 85%;
     vertical-align: top;
 }
 
+li {
+    padding-top: .2em;
+    padding-bottom: .2em;
+}
+
 .summary-detail {
-    margin-left: 2.2em;
+    margin-left: 2.8em;
     /*text-indent: -2em;*/
 }
 
@@ -247,8 +258,8 @@ input[type=checkbox]:checked+.select_all {
 
 .list-items {
     padding-left: 0em;
-    margin-left: 2.5em;
-    text-indent: 0em;
+    margin-left: 4.5em;
+    text-indent: -1.5em;
     font-family: sans-serif;
     display: inline-block;
     /*max-width: 50%;*/
