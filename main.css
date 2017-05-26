@@ -150,18 +150,18 @@ position: relative;
 }
 
 #big-number {
-    /*margin: 0 auto;*/
+    /* margin: 0 auto; */
     margin-top: 0;
     font-size: 3em;
-    height: 10vh;
+    /* height: 10vh; */
     background-color: #000;
     display: block;
     z-index: 4;
     left: 0px;
     right: 0px;
     text-align: center;
-    padding-top: 5%;
-    /*position: absolute;*/
+    /* padding-top: 5%; */
+    /* position: absolute; */
 }
 
 
@@ -351,9 +351,11 @@ blockquote footer cite {
     width: 100%;
     left: 0;
     bottom: 0;
-    position: sticky;
+    /*position: sticky;*/
     background-color: #FFF;
     z-index: 1020;
+    display: inline-block;
+    padding-top: .5em;
 }
 
 .back {
@@ -420,7 +422,7 @@ figcaption {
     max-width: 80%;
     margin: 0 auto;
     display: block;
-    font-size: .8em;
+    font-size: .7em;
 }
 
 
@@ -450,16 +452,16 @@ figcaption {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
     #big-number {
         font-size: 5.5em;
-        height: 15vh;
+        /*height: 15vh;*/
     }
     .big-text {
-        font-size: 9em;
+        font-size: 8em;
         padding: 2%;
         text-shadow: 7px 7px #000;
     }
     .byline {
-        font-size: 3em;
-        text-shadow: 3px 3px #000;
+        font-size: 2.8em;
+        text-shadow: 4px 4px #000;
     }
     #departments {
         float: left;

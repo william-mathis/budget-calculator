@@ -30,6 +30,8 @@
 
 var totalBudget;
 
+
+
 // $(document).ready(function () {
 // 	var $window = $(window),
 // 		$stickyEl = $('#results'),
@@ -44,6 +46,11 @@ var totalBudget;
 // NUMBERS ARE INTEGERS.
 $(document).ready(function () {
 	totalBudget = parseInt($(".defense").text());
+
+	// COMMAS.
+	function formatNumber(totalBudget) {
+		return totalBudget.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+	}
 
 	// GET READY FOR MATH. WE'RE USING CHECKBOXES, SO DON'T PREVENT DEFAULT.
 	$("input[type='checkbox']").on("change", function (e) {
