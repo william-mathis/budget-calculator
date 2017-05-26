@@ -75,6 +75,9 @@ $(document).ready(function () {
 		if (newBudget < 0) {
 			console.log('less than zero');
 			$(".bar").css({ width: "0%" });
+			// $(".defense").text("SURPLUS!");
+			$(".dollar-sign").text("SURPLUS!");
+			$(".dollar-sign").css({ color: green });
 		}
 	});
 
