@@ -48,8 +48,8 @@ $(document).ready(function () {
 	totalBudget = parseInt($(".defense").text());
 
 	// COMMAS.
-	function formatNumber(totalBudget) {
-		return totalBudget.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+	function formatNumber(newBudget) {
+		return newBudget.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
 	}
 
 	// GET READY FOR MATH. WE'RE USING CHECKBOXES, SO DON'T PREVENT DEFAULT.
@@ -70,6 +70,12 @@ $(document).ready(function () {
 		newBudget = newBudget - total;
 		$(".defense").text(newBudget);
 		$(".bar").css({ width: pct + "%" });
+
+		//MAKE PROGRESS BAR GREEN FOR BALANCED BUDGETS.
+		if (newBudget < 0) {
+			console.log('less than zero');
+			// $(".bar").css({ "background-color: green" });
+		}
 	});
 
 	// ALLOW DEPARTMENT CHECKBOXES TO CHECK SUB-CHECKBOXES.

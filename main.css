@@ -356,6 +356,7 @@ blockquote footer cite {
     z-index: 1020;
     display: inline-block;
     padding-top: .5em;
+    margin-bottom: 1.5em;
 }
 
 .back {
