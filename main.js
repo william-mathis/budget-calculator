@@ -74,7 +74,7 @@ $(document).ready(function () {
 		//MAKE PROGRESS BAR GREEN FOR BALANCED BUDGETS.
 		if (newBudget < 0) {
 			console.log('less than zero');
-			// $(".bar").css({ "background-color: green" });
+			$(".bar").css({ width: "0%" });
 		}
 	});
 
