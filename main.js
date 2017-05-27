@@ -71,13 +71,17 @@ $(document).ready(function () {
 		$(".defense").text(newBudget);
 		$(".bar").css({ width: pct + "%" });
 
-		//MAKE PROGRESS BAR GREEN FOR BALANCED BUDGETS.
+		//MAKE SHIT RESPOND TO BALANCED BUDGETS.
 		if (newBudget < 0) {
 			console.log('less than zero');
 			$(".bar").css({ width: "0%" });
 			// $(".defense").text("SURPLUS!");
-			$(".dollar-sign").text("SURPLUS!");
-			$(".dollar-sign").css({ color: green });
+			$(".defense").text("!SURPLUS!$");
+			$(".defense").css({ 'color': 'green' });
+			$(".defense").css({ 'font-weight': '800' });
+			$(".dollar-sign").css({ 'color': 'green' });
+			$(".dollar-sign").css({ 'font-weight': '800' });
+			$(".bar").css({ float: 'right' });
 		}
 	});
 
@@ -102,9 +106,17 @@ $(document).ready(function () {
 	$("#reset").on("click", function (e) {
 		e.preventDefault();
 
+		$(".bar").css({ float: 'left' });
 		$("[type='checkbox']").prop("checked", false).trigger("change");
+
+		$(".defense").text(54000000000);
+		$(".defense").css({ 'font-weight': 'normal' })
+		$(".defense").css({ 'color': '#FFF' })
+		$(".dollar-sign").css({ 'font-weight': 'normal' })
+		$(".dollar-sign").css({ 'color': '#FFF' })
 	})
 });
 
 
 //When you click a checkbox you need it to find that amount and then subtract it from the total. //
+//
